@@ -1,0 +1,62 @@
+
+LISEZMOI
+========
+
+Pas vraiment nécessaire, mais MySQLDiff doit avoir son LISEZMOI.
+Il n'y a pas grand chose à dire sur l'installation parce qu'elle
+est très simple. Les scripts se comprennent tout seul.
+
+1. Installation
+===============
+
+Pour installer MySQLDiff copiez l'archive dans un répertoire visible de
+votre serveur Web and décompressez le en utilisant:
+
+	tar xvfz mysqldiff-X.Y.Z.tar.gz
+
+X.Y.Z est le numéro de version. Cette commande doit créer un répertoire
+avec tous les fichiers nécessaires.
+
+Copiez ou renommez ce fichier en config.inc.php.
+
+
+2. Utilisation de MySQLDiff
+===========================
+
+Sur les deux premiers écrans après avoir lancer MySQLDiff vous avez à
+définir les connexions pour la base source et cible.
+La base source est la base utilisée sur le système en production,
+alors que la base cible correspond à la base de développement. En
+d'autres termes la base source est la base telle qu'elle est alors
+que la base cible est la base telle qu'elle devrait être.
+
+Les différences montrent tous les changements pour que la base cible
+soit égale à la base source.
+
+Le troisième écran contient différentes options avant la génération
+des différences.
+
+o  Changer le type de table - indique si l'on doit changer le type
+   de table si nécessaire.
+o  Options des tables - indique si les différentes options des tables
+   doit être prise en compte.
+o  Altère les commentaires - Prise en compte des commentaires sur les
+   tables.
+o  Fusionner les blocs - Si cette option est activée toutes les
+   modifications sont fusionner dans un seul bloc. Sinon chaque
+   modification sera faite dans un bloc ALTER.
+o  Afficher l'état de la connexion - Affiche les options de connexions
+   à des fins de débogage.
+o  Colorisation syntaxique - Avec cette option tous les blocs seront
+   affichés avec une syntaxe colorée.
+
+Dès que vous cliquer sur "génère" les différences sont générées et
+affichées sur la page suivante.
+
+Nous espérons que MySQLDiff vous aidera à faire du bon travail et
+nous vous souhaitons tous le succès possible!
+
+Lippe-Net Online-Service
+Herforder Straße 309
+33609 Bielefeld
+Germany

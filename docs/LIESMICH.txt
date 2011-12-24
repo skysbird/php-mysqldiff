@@ -1,0 +1,61 @@
+
+LIESMICH
+========
+
+Zwar kaum notwendig, aber MySQLDiff soll auch eine README bekommen.
+Viel gibt's nicht zu sagen. Die Installation ist denkbar einfach und
+das Script selbst sollte eigentlich selbsterklärend sein.
+
+
+1. Installation
+===============
+
+Um MySQLDiff zu installieren kopieren Sie das Archiv in ein im Web sicht
+bares Verzeichnis und entpacken sie das Archiv mit dem Befehl:
+
+	tar xvfz mysqldiff-X.Y.Z.tar.gz
+
+wobei X.Y.Z die entsprechende Versionsnummer ist. Das Archiv erstellt
+ein Unterverzeichnis in dem dann alle notwendigen Dateien liegen.
+
+Kopieren sie die mitgelieferte config.inc.php.dist als config.inc.php
+oder benennen Sie diese entsprechend um.
+
+
+2. Verwendung
+=============
+
+Auf den ersten beiden Bildschirmen machen Sie Einstellungen für die
+Beiden Datenbanken. Die Quelldatenbank ist dabei die aktuelle Datenbank
+des Live-Systems, die Zieldatenbank ist die des Entwicklungssystems.
+
+Der Diff zeigt dann alle Änderungen die vorgenommen werden müssen um
+die Datenbank des Live-Systems auf den Stand des Entwicklungssystems
+zu bringen.
+
+Der dritte Bildschirm ermöglicht Ihnen Einstellungen zum eigentlichen
+Diff - Vorgang.
+
+o  Tabellentypen anpassen - Einstellung ob die Tablehandler beim Diff
+   berücksichtigt werden sollen.
+o  Tabelleneinstellungen ändern - Sollen verschiedenen Tabellen Optionen
+   beim Diff berücksichtigt werden.
+o  Tabellen Kommentare - Berücksichtigen von Tabellen Kommentaren beim
+   Abgleich.
+o  Ein ALTER Statement für jede Tabelle - Ist diese Funktion aktiviert
+   wird für jede Tabelle jeweils nur ein Statement generiert. Bei de-
+   aktivierter Funktion wird für jede Änderung ein Statement gereriert.
+o  Verbindungsstatus anzeigen - Zeigt an, ob die Datenbank-Verbindungen
+   funktioniert haben, eventuell genauerer Statusanzeigen.
+o  Syntax highlighting - Darstellen der Statements mit Syntax high-
+   lighting.
+
+Sobald sie den Schalter generieren betätigen wird das Diff erstellt und
+auf der folgenden Seite dargestellt.
+
+Wir hoffen das MySQLDiff Ihnen gute Dienste leistet und wünschen Ihnen
+viel Erfolg.
+
+Lippe-Net Online-Service
+Herforder Straße 309
+33609 Bielefeld
